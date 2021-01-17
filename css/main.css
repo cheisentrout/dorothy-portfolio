@@ -88,15 +88,20 @@ textarea {
    ========================================================================== */
 /* Mobile styles */
 
+/* -- Global Styles -- */
+
 body {
   font-size: 16px;
   font-family: "cardo";
+  width: 100%;
 }
 
 img {
   width: 350px;
   height: auto;
 }
+
+/* -- Header --*/
 
 header {
   display: flex;
@@ -158,8 +163,8 @@ nav ul li {
 
 /*------------ MAIN - featured image, quote, gallery ----------*/
 
-section .content-wrapper {
-  display: flex;
+.content-wrapper {
+  background-color: #EBEBEB;
 }
 
 .featured-image {
@@ -180,7 +185,12 @@ section .content-wrapper {
   display: flex;
   flex-flow: column;
   align-items: center;
-  width: 45%;
+  width: 90%;
+}
+
+.featured-text h1 {
+  color: #8C1A37;
+
 }
 
 .featured-text p {
@@ -206,6 +216,36 @@ section .content-wrapper {
   padding: 20px;
 
 }
+
+/* -- ABOUT - MOBILE STYLES -- */
+
+.about {
+  background-color: #EBEBEB;
+  display: flex;
+  width: 100%;
+  justify-content: center
+}
+
+.artist-info img {
+  width: 90%;
+}
+
+.artist-info {
+  display: flex;
+  flex-flow: row wrap;
+  width: 90%;
+  justify-content: center;
+  margin: 20px 0 20px 20px;
+  text-align: center;
+
+}
+
+.artist-info p {
+  margin-bottom: 40px;
+}
+
+
+
 
 
 
@@ -308,6 +348,28 @@ section .content-wrapper {
 
   .featured-image img {
     max-width: 50%;
+  }
+
+  .featured-text {
+    width: 45%;
+    text-align: right;
+    align-items: flex-end;
+  }
+
+  .artist-info {
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .artist-info img {
+    width: 50%;
+  }
+
+  .artist-info p {
+    width: 45%;
+    max-width: 400px;
+    text-align: left;
   }
 
 }
