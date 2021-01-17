@@ -93,6 +93,11 @@ body {
   font-family: "cardo";
 }
 
+img {
+  width: 350px;
+  height: auto;
+}
+
 header {
   display: flex;
   background-color:;
@@ -155,39 +160,50 @@ nav ul li {
 
 section .content-wrapper {
   display: flex;
-  width: 100%;
 }
 
 .featured-image {
   display: flex;
   align-items: center;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
   text-align: center;
-  margin-top: 20px;
+  margin: auto;
+  padding-top: 20px;
+  justify-content: center;
 }
 
 .featured-image img {
-  height: 300px;
-  width: 450px;
-  max-width: 90%;
+  width: 90%;
 }
 
-.featured-image h1 {
-  margin: auto;
+.featured-text {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 45%;
+}
+
+.featured-text p {
+  margin-top: 0;
 }
 
 .portfolio-gallery {
   display: flex;
-  width: 90%;
+  justify-content: center;
+  width: 100%;
 }
 
 .portfolio-gallery ul {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
   list-style: none;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0;
 }
 
 .portfolio-gallery li {
+  padding: 20px;
 
 }
 
@@ -282,8 +298,20 @@ section .content-wrapper {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /* Tablet Styles */
+
+  .featured-image {
+    justify-content: space-between;
+    width: 90%;
+  }
+
+  .featured-image img {
+    max-width: 50%;
+  }
+
+}
+@media only screen and (min-width: 1200px) {}
 }
 
 @media print,
