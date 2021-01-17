@@ -168,13 +168,13 @@ nav ul li {
 }
 
 .featured-image {
-  display: flex;
   align-items: center;
+  display: flex;
   flex-flow: row wrap;
-  text-align: center;
+  justify-content: center;
   margin: auto;
   padding-top: 20px;
-  justify-content: center;
+  text-align: center;
 }
 
 .featured-image img {
@@ -190,6 +190,8 @@ nav ul li {
 
 .featured-text h1 {
   color: #8C1A37;
+  font-size: 2.5em;
+  letter-spacing: .07em;
 
 }
 
