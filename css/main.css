@@ -237,7 +237,7 @@ nav ul li {
   flex-flow: row wrap;
   width: 90%;
   justify-content: center;
-  margin: 20px 0 20px 20px;
+  margin: 20px 20px 40px 20px;
   text-align: center;
 
 }
@@ -246,7 +246,50 @@ nav ul li {
   margin-bottom: 40px;
 }
 
+/* -- FOOTER -- */
 
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 20px;
+}
+
+#footer-title {
+  width: 100%;
+  background-color: #E6D9DC;
+  padding: 0 30px;
+  font-family: "alata";
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.footer address {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  margin: 0 30px;
+}
+
+address p {
+  font-style: normal;
+  margin-bottom: 0;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.social-icons i {
+  padding: 20px 15px;
+  color: #8C1A37;
+  font-size: 1.7em;
+
+}
 
 
 
@@ -366,6 +409,7 @@ nav ul li {
 
   .artist-info img {
     width: 50%;
+    max-width: 500px;
   }
 
   .artist-info p {
@@ -374,8 +418,33 @@ nav ul li {
     text-align: left;
   }
 
+  .footer-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .footer address {
+    width: 43%;
+    margin-left: 20px;
+  }
+
+  .footer .social-icons {
+    width: 43%;
+    justify-content: flex-end;
+    margin-right: 20px;
+  }
 }
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+
+.footer address {
+  margin-left: 35px;
+}
+
+.footer .social-icons {
+  margin-right: 35px;
 }
 
 @media print,
